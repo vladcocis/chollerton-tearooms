@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <!--   Fonts   -->
+    <!--   Font - FatFace - Linked from Google Fonts   -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <!--   Font - Text Me One - Linked from Google Fonts   -->
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+    <title>Chollerton Tearooms</title>
+</head>
+
+<body>
+    <!--   Wrapper for main page    -->
+    <div class="wrapper">
+        <!--   Header includes navbar and image with title    -->
+        <header class="header">
+            <!--   Navbar area    -->
+            <nav>
+                <!--   Tabbing index from left to right    -->
+                <div class="nav-centered">
+                    <a href="index.html" class="active" tabindex="3">Home</a>
+                </div>
+
+                <a href="findOutMore.php" tabindex="1">Find out more</a>
+                <a href="admin.php" tabindex="2">Admin</a>
+
+                <div class="nav-right">
+                    <a href="credits.html" tabindex="4">Credits</a>
+                    <a href="./wireframe.pdf" tabindex="5">Wireframe</a>
+                </div>
+
+            </nav>
+            <!--   Title is responsive, in order to scale with page size    -->
+            <h1 style="font-size:5vw;">Credits</h1>
+        </header>
+        <div class="container">
+            <!--   Main content is displayed in the center of the page, flanked by 2 sidebars    -->
+            <main class="content">
+                <div class="main">
+                    <h2>Creator</h2>
+                    <div class="credits">Vlad Cocis</div>
+                    <div class="credits">18017881</div>
+                    <div class="credits">vlad.cocis@northumbria.ac.uk</div>
+                    <div class="credits">Northumbria University</div>
+                </div>
+                <div class="main">
+                    <h2 class="center">References</h2>
+                    <div class="credits">The images are free stock photos, available for use without paying
+                        royalties.</div>
+                    <!--   Links for all images used in the website    -->
+                    <div class="credits">
+                        <a href="https://images.pexels.com/photos/211290/pexels-photo-211290.jpeg?cs=srgb&dl=blur-card-cardboard-211290.jpg&fm=jpg">Letter
+                            image</a></div>
+                    <div class="credits">
+                        <a href="https://images.pexels.com/photos/545012/pexels-photo-545012.jpeg?cs=srgb&dl=bed-bedroom-blanket-545012.jpg&fm=jpg">Bed
+                            image</a></div>
+                    <div class="credits">
+                        <a href="https://images.pexels.com/photos/2209512/pexels-photo-2209512.jpeg?cs=srgb&dl=assorted-bargain-commerce-2209512.jpg&fm=jpg">Village
+                            store image</a></div>
+                    <div class="credits">
+                        <a href="https://images.pexels.com/photos/730807/pexels-photo-730807.jpeg?cs=srgb&dl=activity-art-art-class-730807.jpg&fm=jpg.">Crafts
+                            image</a></div>
+                    <div class="credits">
+                        <a href="https://images.pexels.com/photos/405238/pexels-photo-405238.jpeg?cs=srgb&dl=blur-close-up-coffee-cup-405238.jpg&fm=jpg">Teacup
+                            image</a></div>
+                    <div class="credits">All fonts used are free and obtained from Google Fonts</div>
+                    <!--   Links for all fonts used in the website    -->
+                    <div class="credits"><a href="https://fonts.googleapis.com/css?family=Abril+Fatface">FatFace font</a></div>
+                    <div class="credits"><a href="https://fonts.googleapis.com/css?family=Text+Me+One">Text Me One font</a></div>
+
+                </div>
+                <div class="main">
+                    <h2 class="center">Security Considerations</h2>
+                    <div>
+                        The first step that should be taken in the splitting of the web application into frontend and
+                        backend components, with the admin page being accesible only through the backend. Secondly, the
+                        information from the sign up form is sent not only to the database, but also in the URL of the
+                        Thank you page. This could lead to a potential security breach. To be in compliance with the
+                        2018
+                        Data protection act, the customers' private information should be encrypted in the database.
+                        The application does not feature
+                        accounts and user login so password encryption is not
+                        necesarry.
+                    </div>
+                    <div>
+                        Furthermore, HTTPS compliance must be guaranteed by obtaining an SSL certificate. HTTPS offers
+                        data encryption and security, offering all customers peace of mind when accessing the
+                        Chollerton Tearooms website.
+                    </div>
+
+
+                    <ul>
+                        <!--   References    -->
+                        <li>General Data Protection Regulation (GDPR). (2018). General Data Protection Regulation
+                            (GDPR) –
+                            Final text neatly arranged. [online] Available at: <a href="https://gdpr-info.eu/">https://gdpr-info.eu/</a>
+                            [Accessed 5 May 2019].
+                        </li>
+                        <li>
+                            Burgess, M. (2018). What is GDPR? The summary guide to GDPR compliance in the UK.
+                            [online] Wired.co.uk. Available at:
+                            <a href="http://www.wired.co.uk/article/what-is-gdpr-uk-eu-legislation-compliance-summary-fines-2018">http://www.wired.co.uk/article/what-is-gdpr-uk-eu-legislation-compliance-summary-fines-2018</a>
+                            [Accessed 5 May 2019].
+                        </li>
+                        <li>
+                            Basques, K. (2019). Why HTTPS Matters.
+                            [online] developers.google.com Available at:
+                            <a href="https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https">https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https</a>
+                            [Accessed 5 May 2019].
+                        </li>
+                    </ul>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

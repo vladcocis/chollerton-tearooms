@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+/*Styling for content elements*/
+html {
+    height: 100%;   
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+body {
+    margin:0;
+    padding:0;
+	font: 12px/18px Arial, sans-serif;
+    height: 100%;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 1em;
+}
+
+/*Styling for headings and labels*/
+h1{
+    font-family: 'Abril Fatface';
+    text-align:center;
+    font-size: 5em;
+}
+
+h2{
+    text-align:center;
+}
+
+label{
+    text-align:center;
+}
+
+
+/*Styling for wrapper elements which house the actual content*/
+.header {
+	height: 50%;
+    background-image: url(./cup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#ffffff;
+}
+
+.wrapper {
+	min-width: 720px;
+	max-width: 1920px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto;
+    height: 100%;
+}
+
+.container {
+	width: 100%;
+	float: left;
+    overflow: hidden;
+    
+}
+
+.content {
+    padding: 0 270px 0 270px;
+}
+
+.footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
+	min-width: 720px;
+	max-width: 1920px;
+	height: 100px;
+    position: relative;
+    color: #000000;
+    text-align: right;
+    line-height: 0.5em;
+}
+
+/*Styling for the two sidebars*/
+.left-sidebar {
+	float: left;
+	width: 250px;
+    margin-left: -100%;
+    position: relative;
+    padding:5px;
+}
+
+.right-sidebar {
+	float: left;
+	width: 250px;
+	margin-left: -250px;
+    position: relative;
+
+}
+/*Styling for the credits page*/
+.credits{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
+	text-align:center;
+}
+
+/*Styling for the navbar*/
+nav {
+    position: relative;
+    background-color:rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+nav a {
+  float: left;
+  color:#ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*Active tab is centered and colored differently from other tabs*/
+nav a.active {
+  background-color: rgba(231, 62, 0, 0.5);
+}
+
+.nav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Split navbar style*/
+.nav-right {
+  float: right;
+}
+
+/*Styling for form*/
+.form-style-1 {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form-style-1 label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	outline: none;	
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+.form-style-1 .field-divided{
+	width: 49%;
+}
+
+.form-style-1 .field-long{
+	width: 100%;
+}
+.form-style-1 .field-select{
+	width: 100%;
+}
+.form-style-1 .field-textarea{
+	height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+	background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.form-style-1 .required{
+	color:red;
+}
+
+/*Styling for the table*/
+table.orangeTable {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #e73e00;
+  border-style: solid;
+  color: #000000;
+  text-align: center;
+}
+
+table.orangeTable td, table.orangeTable th {
+  border-width: 2px;
+  border-color: #e73e00;
+  border-style: solid;
+  padding: 5px;
+}
+
+table.orangeTable thead {
+  background-color: #E73E00;
+  
+}
+
+
